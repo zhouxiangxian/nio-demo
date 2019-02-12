@@ -1,0 +1,328 @@
+2019-01-22 14:12:58,132 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:12:58,134 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&phoneno=%28select+%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:13:01,517 INFO [cn.mldn.test.TestHttp] - response: 
+2019-01-22 14:13:01,519 INFO [cn.mldn.test.TestHttp] - resultMsg:
+2019-01-22 14:20:28,901 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:20:28,902 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&phoneno=%28select+%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:20:29,078 INFO [cn.mldn.test.TestHttp] - resultMsg:<html>	<head>		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		<script>		function showwww()		{			var paddd=window.parent;			var docUrl = window.location.href;			var index=0;			while(paddd.location.href!=docUrl && index<6)			{				docUrl=paddd.location.href;				paddd=paddd.parent;				index++;			}			if(paddd.document.getElementById("logoutalert")!=null)			{				paddd.document.getElementById("logoutalert").value = 1;			}			docUrl = paddd.location.href;			var urls = docUrl.split("/");			if(urls.length == 5)			{				if(urls[4]!="systemManage.htm?method=toSkip")				{					urls[3] = "";				}			}			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";			if("zh_TW"==langName){			alert("請重新登錄！");			}else if("zh_HK"==langName){			alert("please login!");			}else{			alert("请重新登录！");			}			paddd.location.href=docUrl;		}		(EMP_Cookie = { 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}   		});		</script>	</head>	<body onload='showwww()'>	</body></html>
+2019-01-22 14:20:29,078 INFO [cn.mldn.test.TestHttp] - resultMsg:<html>	<head>		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		<script>		function showwww()		{			var paddd=window.parent;			var docUrl = window.location.href;			var index=0;			while(paddd.location.href!=docUrl && index<6)			{				docUrl=paddd.location.href;				paddd=paddd.parent;				index++;			}			if(paddd.document.getElementById("logoutalert")!=null)			{				paddd.document.getElementById("logoutalert").value = 1;			}			docUrl = paddd.location.href;			var urls = docUrl.split("/");			if(urls.length == 5)			{				if(urls[4]!="systemManage.htm?method=toSkip")				{					urls[3] = "";				}			}			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";			if("zh_TW"==langName){			alert("請重新登錄！");			}else if("zh_HK"==langName){			alert("please login!");			}else{			alert("请重新登录！");			}			paddd.location.href=docUrl;		}		(EMP_Cookie = { 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}   		});		</script>	</head>	<body onload='showwww()'>	</body></html>
+2019-01-22 14:22:10,045 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:22:10,046 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&phoneno=%28select+%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:22:10,119 INFO [cn.mldn.test.TestHttp] - resultMsg:<html>	<head>		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		<script>		function showwww()		{			var paddd=window.parent;			var docUrl = window.location.href;			var index=0;			while(paddd.location.href!=docUrl && index<6)			{				docUrl=paddd.location.href;				paddd=paddd.parent;				index++;			}			if(paddd.document.getElementById("logoutalert")!=null)			{				paddd.document.getElementById("logoutalert").value = 1;			}			docUrl = paddd.location.href;			var urls = docUrl.split("/");			if(urls.length == 5)			{				if(urls[4]!="systemManage.htm?method=toSkip")				{					urls[3] = "";				}			}			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";			if("zh_TW"==langName){			alert("請重新登錄！");			}else if("zh_HK"==langName){			alert("please login!");			}else{			alert("请重新登录！");			}			paddd.location.href=docUrl;		}		(EMP_Cookie = { 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}   		});		</script>	</head>	<body onload='showwww()'>	</body></html>
+2019-01-22 14:24:16,382 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:24:16,384 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&phoneno=%28select+%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:24:16,595 INFO [cn.mldn.test.TestHttp] - resultMsg:<html>	<head>		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		<script>		function showwww()		{			var paddd=window.parent;			var docUrl = window.location.href;			var index=0;			while(paddd.location.href!=docUrl && index<6)			{				docUrl=paddd.location.href;				paddd=paddd.parent;				index++;			}			if(paddd.document.getElementById("logoutalert")!=null)			{				paddd.document.getElementById("logoutalert").value = 1;			}			docUrl = paddd.location.href;			var urls = docUrl.split("/");			if(urls.length == 5)			{				if(urls[4]!="systemManage.htm?method=toSkip")				{					urls[3] = "";				}			}			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";			if("zh_TW"==langName){			alert("請重新登錄！");			}else if("zh_HK"==langName){			alert("please login!");			}else{			alert("请重新登录！");			}			paddd.location.href=docUrl;		}		(EMP_Cookie = { 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}   		});		</script>	</head>	<body onload='showwww()'>	</body></html>
+2019-01-22 14:25:28,543 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:25:28,545 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&phoneno=%28select+%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:25:28,744 INFO [cn.mldn.test.TestHttp] - resultMsg:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		function showwww()
+		{
+			var paddd=window.parent;
+			var docUrl = window.location.href;
+			var index=0;
+			while(paddd.location.href!=docUrl && index<6)
+			{
+				docUrl=paddd.location.href;
+				paddd=paddd.parent;
+				index++;
+			}
+			if(paddd.document.getElementById("logoutalert")!=null)
+			{
+				paddd.document.getElementById("logoutalert").value = 1;
+			}
+			docUrl = paddd.location.href;
+			var urls = docUrl.split("/");
+			if(urls.length == 5)
+			{
+				if(urls[4]!="systemManage.htm?method=toSkip")
+				{
+					urls[3] = "";
+				}
+			}
+			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];
+			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";
+			if("zh_TW"==langName){
+			alert("請重新登錄！");
+			}else if("zh_HK"==langName){
+			alert("please login!");
+			}else{
+			alert("请重新登录！");
+			}
+			paddd.location.href=docUrl;
+		}
+		(EMP_Cookie = {
+ 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},
+  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},
+  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}
+   		});
+		</script>
+	</head>
+	<body onload='showwww()'>
+	</body>
+</html>
+2019-01-22 14:27:19,334 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:27:19,336 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&%28select+%2C%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:27:19,533 INFO [cn.mldn.test.TestHttp] - resultMsg:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		function showwww()
+		{
+			var paddd=window.parent;
+			var docUrl = window.location.href;
+			var index=0;
+			while(paddd.location.href!=docUrl && index<6)
+			{
+				docUrl=paddd.location.href;
+				paddd=paddd.parent;
+				index++;
+			}
+			if(paddd.document.getElementById("logoutalert")!=null)
+			{
+				paddd.document.getElementById("logoutalert").value = 1;
+			}
+			docUrl = paddd.location.href;
+			var urls = docUrl.split("/");
+			if(urls.length == 5)
+			{
+				if(urls[4]!="systemManage.htm?method=toSkip")
+				{
+					urls[3] = "";
+				}
+			}
+			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];
+			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";
+			if("zh_TW"==langName){
+			alert("請重新登錄！");
+			}else if("zh_HK"==langName){
+			alert("please login!");
+			}else{
+			alert("请重新登录！");
+			}
+			paddd.location.href=docUrl;
+		}
+		(EMP_Cookie = {
+ 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},
+  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},
+  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}
+   		});
+		</script>
+	</head>
+	<body onload='showwww()'>
+	</body>
+</html>
+2019-01-22 14:40:27,604 INFO [cn.mldn.test.TestHttp] - url: http://127.0.0.1:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:40:27,606 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&%28select+%2C%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:40:27,753 INFO [cn.mldn.test.TestHttp] - resultMsg:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		function showwww()
+		{
+			var paddd=window.parent;
+			var docUrl = window.location.href;
+			var index=0;
+			while(paddd.location.href!=docUrl && index<6)
+			{
+				docUrl=paddd.location.href;
+				paddd=paddd.parent;
+				index++;
+			}
+			if(paddd.document.getElementById("logoutalert")!=null)
+			{
+				paddd.document.getElementById("logoutalert").value = 1;
+			}
+			docUrl = paddd.location.href;
+			var urls = docUrl.split("/");
+			if(urls.length == 5)
+			{
+				if(urls[4]!="systemManage.htm?method=toSkip")
+				{
+					urls[3] = "";
+				}
+			}
+			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];
+			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";
+			if("zh_TW"==langName){
+			alert("請重新登錄！");
+			}else if("zh_HK"==langName){
+			alert("please login!");
+			}else{
+			alert("请重新登录！");
+			}
+			paddd.location.href=docUrl;
+		}
+		(EMP_Cookie = {
+ 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},
+  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},
+  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}
+   		});
+		</script>
+	</head>
+	<body onload='showwww()'>
+	</body>
+</html>
+2019-01-22 14:41:46,246 INFO [cn.mldn.test.TestHttp] - url: http://127.0.0.1:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:41:46,247 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&%28select+%2C%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:41:46,484 INFO [cn.mldn.test.TestHttp] - resultMsg:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		function showwww()
+		{
+			var paddd=window.parent;
+			var docUrl = window.location.href;
+			var index=0;
+			while(paddd.location.href!=docUrl && index<6)
+			{
+				docUrl=paddd.location.href;
+				paddd=paddd.parent;
+				index++;
+			}
+			if(paddd.document.getElementById("logoutalert")!=null)
+			{
+				paddd.document.getElementById("logoutalert").value = 1;
+			}
+			docUrl = paddd.location.href;
+			var urls = docUrl.split("/");
+			if(urls.length == 5)
+			{
+				if(urls[4]!="systemManage.htm?method=toSkip")
+				{
+					urls[3] = "";
+				}
+			}
+			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];
+			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";
+			if("zh_TW"==langName){
+			alert("請重新登錄！");
+			}else if("zh_HK"==langName){
+			alert("please login!");
+			}else{
+			alert("请重新登录！");
+			}
+			paddd.location.href=docUrl;
+		}
+		(EMP_Cookie = {
+ 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},
+  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},
+  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}
+   		});
+		</script>
+	</head>
+	<body onload='showwww()'>
+	</body>
+</html>
+2019-01-22 14:42:22,744 INFO [cn.mldn.test.TestHttp] - url: http://192.169.6.229:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:42:22,746 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&%28select+%2C%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:42:44,333 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:42:44,335 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&%28select+%2C%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:42:44,501 INFO [cn.mldn.test.TestHttp] - resultMsg:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		function showwww()
+		{
+			var paddd=window.parent;
+			var docUrl = window.location.href;
+			var index=0;
+			while(paddd.location.href!=docUrl && index<6)
+			{
+				docUrl=paddd.location.href;
+				paddd=paddd.parent;
+				index++;
+			}
+			if(paddd.document.getElementById("logoutalert")!=null)
+			{
+				paddd.document.getElementById("logoutalert").value = 1;
+			}
+			docUrl = paddd.location.href;
+			var urls = docUrl.split("/");
+			if(urls.length == 5)
+			{
+				if(urls[4]!="systemManage.htm?method=toSkip")
+				{
+					urls[3] = "";
+				}
+			}
+			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];
+			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";
+			if("zh_TW"==langName){
+			alert("請重新登錄！");
+			}else if("zh_HK"==langName){
+			alert("please login!");
+			}else{
+			alert("请重新登录！");
+			}
+			paddd.location.href=docUrl;
+		}
+		(EMP_Cookie = {
+ 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},
+  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},
+  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}
+   		});
+		</script>
+	</head>
+	<body onload='showwww()'>
+	</body>
+</html>
+2019-01-22 14:44:43,730 INFO [cn.mldn.test.TestHttp] - url: http://localhost:8081/emp_std/wy_gateManage.htm
+2019-01-22 14:44:43,731 INFO [cn.mldn.test.TestHttp] - request: gatename=&ipadress=&portnum=&%28select+%2C%29&simunicom=&input=1234&pageSize=25&pageIndex=25&totalPage=25&totalRec=0&needNewData=1
+2019-01-22 14:44:43,976 INFO [cn.mldn.test.TestHttp] - resultMsg:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		function showwww()
+		{
+			var paddd=window.parent;
+			var docUrl = window.location.href;
+			var index=0;
+			while(paddd.location.href!=docUrl && index<6)
+			{
+				docUrl=paddd.location.href;
+				paddd=paddd.parent;
+				index++;
+			}
+			if(paddd.document.getElementById("logoutalert")!=null)
+			{
+				paddd.document.getElementById("logoutalert").value = 1;
+			}
+			docUrl = paddd.location.href;
+			var urls = docUrl.split("/");
+			if(urls.length == 5)
+			{
+				if(urls[4]!="systemManage.htm?method=toSkip")
+				{
+					urls[3] = "";
+				}
+			}
+			docUrl = urls[0] + "//" + urls[2] + "/" + urls[3];
+			var langName = EMP_Cookie.get("emp_lang")||"zh_CN";
+			if("zh_TW"==langName){
+			alert("請重新登錄！");
+			}else if("zh_HK"==langName){
+			alert("please login!");
+			}else{
+			alert("请重新登录！");
+			}
+			paddd.location.href=docUrl;
+		}
+		(EMP_Cookie = {
+ 			add:function(key,value){document.cookie = key + "="+ escape (value) + ";expires=Tue, 19 Jan 2038 00:01:11 GMT";},
+  			del:function(key){document.cookie=key+"= ; expires=Sat, 01 Sep 2001 00:00:00 GMT";},
+  			get:function(key){var arr,reg=new RegExp("(^| )"+key+"=([^;]*)(;|$)");if(arr=document.cookie.match(reg))return unescape(arr[2]);else return null;}
+   		});
+		</script>
+	</head>
+	<body onload='showwww()'>
+	</body>
+</html>

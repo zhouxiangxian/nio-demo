@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration   
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 表示进行mybatis环境配置 -->
+<configuration>
+	<!-- 定义操作的别名，mybatis开始，别名必须在公共配置文件里面定义 -->
+	<typeAliases>
+		<typeAlias alias="Item" type="cn.mldn.vo.Item"/>
+		<typeAlias alias="News" type="cn.mldn.vo.News"/>
+	</typeAliases>
+	<!-- 定义所有的VO类的配置文件 -->
+	<mappers>									<!-- 映射文件信息 -->
+		<mapper resource="cn/mldn/vo/mapping/Item.xml" />
+		<mapper resource="cn/mldn/vo/mapping/News.xml" />
+	</mappers>
+</configuration>

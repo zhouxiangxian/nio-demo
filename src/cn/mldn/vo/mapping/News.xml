@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NewsNS">
+    <resultMap id="NewsResultMap" type="News">
+        <id property="nid" column="nid"/>
+        <result property="title" column="title"/>
+        <result property="pubdate" column="pubdate"/>
+        <result property="content" column="content"/>
+        <!-- 配置一对多关系，配置的目的不在于级联操作，而在于可以找到iid -->
+        <association property="item" column="iid" javaType="Item" resultMap="ItemNS.ItemResultMap"/>
+    </resultMap>
+    <!-- 数据增加操作 -->
+    <insert id="doCreate" parameterType="News">
+        INSERT INTO news(title,pubdate,content,iid) VALUES (#{title},#{pubdate},#{content},#{item.iid})
+    </insert>
+    <!-- 数据修改操作 -->
+    <update id="doUpdate" parameterType="News">
+        UPDATE news SET title=#{title},content=#{content},iid=#{item.iid} WHERE nid=#{nid}
+    </update>
+    <!-- 数据删除操作 -->
+    <delete id="doRemove" parameterType="java.util.List">
+        DELETE FROM news
+        <where>
+            nid IN
+            <foreach collection="list" item="ele" open="(" close=")" separator=",">
+                #{ele}
+            </foreach>
+        </where>
+    </delete>
+    <!-- 数据分页显示 -->
+    <select id="findAllBySplit" parameterType="java.util.Map" resultMap="NewsResultMap">
+        SELECT nid,title,pubdate,content,iid FROM news LIMIT #{start},#{lineSize}
+    </select>
+    <!-- 根据标题查询新闻信息，主要是检查标题数据是否重复 -->
+    <select id="findByTitle" parameterType="String" resultMap="NewsResultMap">
+        SELECT nid,title,pubdate,content,iid FROM news WHERE title=#{title}
+    </select>
+    <select id="findByTitleForUpdate" parameterType="java.util.Map" resultMap="NewsResultMap">
+        SELECT nid,title,pubdate,content,iid FROM news WHERE title=#{title} AND nid!=#{nid}
+    </select>
+    <!-- 查询全部数据量 -->
+    <select id="getAllCount" parameterType="java.util.Map" resultType="Integer">
+        SELECT COUNT(nid) FROM news
+    </select>
+    <!-- 根据新闻ID查询出一个新闻的信息 -->
+    <select id="findById" parameterType="Integer" resultMap="NewsResultMap">
+        SELECT nid,title,pubdate,content,iid FROM news WHERE nid=#{nid}
+    </select>
+</mapper>

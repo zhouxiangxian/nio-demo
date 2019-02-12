@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ItemNS">
+    <resultMap id="ItemResultMap" type="Item">
+        <id property="iid" column="iid"/>
+        <result property="title" column="title"/>
+        <!-- 此处绝对不要配置级联操作，否则性能会很差 -->
+        <collection property="newses" column="iid" javaType="java.util.List"
+                    ofType="News"/>
+    </resultMap>
+    <select id="findAll" resultMap="ItemResultMap">
+        SELECT iid,title FROM item
+    </select>
+</mapper>
