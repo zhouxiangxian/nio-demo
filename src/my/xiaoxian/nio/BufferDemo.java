@@ -4,11 +4,14 @@ import java.nio.ByteBuffer;
 
 public class BufferDemo {
 	public static void main(String[] args) {
-		String str="www.xiaoxian.comdddddddddddddddd";
-	    ByteBuffer buffer = ByteBuffer.allocate(200);
+		String str="www.xiaoxian.com";
+	    ByteBuffer buffer = ByteBuffer.allocate(20);
 	    System.out.println("1:capacity="+buffer.capacity()+",limit="+buffer.limit()+",position="+buffer.position());
 		buffer.put(str.getBytes());
 		System.out.println("2:capacity="+buffer.capacity()+",limit="+buffer.limit()+",position="+buffer.position());
+		buffer.flip();
+		buffer.put("hh".getBytes());
+		System.out.println("4:capacity="+buffer.capacity()+",limit="+buffer.limit()+",position="+buffer.position());
 		buffer.flip();
 		
 		System.out.println("3:capacity="+buffer.capacity()+",limit="+buffer.limit()+",position="+buffer.position());

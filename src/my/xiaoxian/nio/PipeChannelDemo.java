@@ -35,9 +35,6 @@ public class PipeChannelDemo {
 					e.printStackTrace();
 				}
 			}
-			while(buffer.hasRemaining()) {
-				
-			}
 		},"发送线程").start();
 	}
 
