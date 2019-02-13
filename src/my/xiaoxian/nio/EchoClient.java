@@ -17,9 +17,7 @@ public class EchoClient {
 		boolean flag=true;
 		while(flag) {
 			buffer.clear();
-			
 			//写数据
-			
 			String msg=InputUtil.getString("请输入数据:");
 			buffer.put(msg.getBytes());
 			buffer.flip();//重置
@@ -31,13 +29,9 @@ public class EchoClient {
 			
 			//读取缓存中的数据
 			int readCount=socketChannel.read(buffer);
-			
 			//重设缓存区
-			
 			buffer.flip();
-			
 			System.out.println(new String(buffer.array(),0,readCount));
-			
 			if("exit".equals(msg)) {
 				flag=false;
 			}
